@@ -1,0 +1,6 @@
+git init     (initialize an empty git vcs repository)
+git add .    (staged all files in once)
+git status    (show the status of the file - untracked,staged and tracked)
+git add testing.py   (staged single file for commit)
+git rm --cached testing.py       (change status from staged to untracked)
+git commit -m "added testing files"  (Commits staged changes with the message "added testing files".)
