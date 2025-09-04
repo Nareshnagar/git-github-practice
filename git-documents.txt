@@ -9,5 +9,3 @@ git remote add origin https://github.com/Nareshnagar/git-github-practice.git    
 git remote -v                 (Lists the remote repositories and their URLs.)      
 git push origin master        (Pushes your local master branch to the origin remote repository on GitHub)
 git clone urls     (clone from github to local)
-
-this is somw new changes
