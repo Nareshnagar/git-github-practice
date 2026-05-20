@@ -1,0 +1,27 @@
+on:
+ push:
+  branches:
+   - main
+   - develop
+jobs:
+
+   test:
+    runs-on: ubuntu-latest
+
+    steps:
+     - uses: actions/checkout@v4
+     
+     - name: install Dependencies
+       run: pip install -r requirements.txt
+
+     - name: Run Tests
+       run: pytest
+    deploy:
+      needs: test
+      if: github.ref == 'refs/heads/master'
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+
+        - name: Deploy to Production
+          run: echo "Deploying to production environment..."
