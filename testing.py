@@ -1,1 +1,0 @@
-print("hello my dear friend how are you");
